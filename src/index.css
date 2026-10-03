@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+/* poora page: card upar rahe, horizontally beech me */
+.page {
+  min-height: 100%;
+  padding: 48px 16px;
+  background: #dfe9ee;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px 28px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(20, 50, 70, 0.15);
+}
+
+.title {
+  font-size: 22px;
+  color: #12303f;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #5d7380;
+}
+
+/* bada number */
+.count {
+  margin: 28px 0 24px;
+  font-size: 88px;
+  font-weight: 800;
+  line-height: 1;
+  color: #12303f;
+  transition: color 0.2s;
+}
+
+.count.positive {
+  color: #0f766e;
+}
+
+.count.negative {
+  color: #b4234a;
+}
+
+/* step chips */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.chip {
+  padding: 6px 14px;
+  border: 1px solid #c3d3dc;
+  border-radius: 999px;
+  background: #fff;
+  color: #3c5663;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.chip:hover {
+  background: #eef4f7;
+}
+
+.chip.active {
+  background: #12303f;
+  border-color: #12303f;
+  color: #fff;
+}
+
+/* main buttons */
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.button {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s, filter 0.15s;
+}
+
+.button:hover {
+  filter: brightness(1.08);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.plus {
+  background: #0f766e;
+}
+
+.minus {
+  background: #b4234a;
+}
+
+.reset {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c3d3dc;
+  border-radius: 12px;
+  background: transparent;
+  color: #3c5663;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: #eef4f7;
+}
+
+button:focus-visible {
+  outline: 3px solid #7cb7d6;
+  outline-offset: 2px;
+}
+
+/* history */
+.history {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #e2ebf0;
+  text-align: left;
+}
+
+.history h3 {
+  font-size: 14px;
+  color: #12303f;
+  margin-bottom: 10px;
+}
+
+.history ul {
+  list-style: none;
+}
+
+.history li {
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  background: #f1f6f9;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #3c5663;
+  font-variant-numeric: tabular-nums;
+}
+
+.empty {
+  font-size: 14px;
+  color: #7e929d;
+}
